@@ -1,0 +1,5 @@
+So we will have to use a dp solution here. Here, dp[i][j] = min. transformations required to construct till c[i+j-1] by using i characters from a and j characters from b. The transition will be like this ->
+dp[i][j] = dp[i][j]=min(dp[i-1][j]+(a[i-1]==c[i+j-1] ? 0:1),dp[i][j-1]+(b[j-1]==c[i+j-1] ? 0:1)). This basically handles 2 cases - 
+1) If we take the character from a, then the answer would be the dp[i-1][j] or dp[i-1][j]+1 depending on whether a[i-1]=c[i+j-1] or not.
+2) Similarly calculation for when we take the character from b.
+As there are n*m states and transition time for each state is constant, the code's time complexity will be O(n*m) which would work in the given constraints.(n=a's size and m=b's size)
