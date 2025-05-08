@@ -1,0 +1,4 @@
+The solution to this question can be derived only by dry running multiple test cases. From doing so the following cases come up - 
+1)If n is even, construct the initial array by placing alternate 0s and 1s. Then there would be a problem only if x and y have the same element. Then in that case make y to be 2.
+2)If n is odd and the distance between x and y is also odd, place a 2 in the middle of x and y. Then on the left of 2, place 0s and 1s alternatively and on the other side do the opposite.
+3)If n is odd and the distance between x and y is even, place a 2 at the start/end(depending on whether x and y are on either ends) and put alternate 1s and 0s in the remaining array.
