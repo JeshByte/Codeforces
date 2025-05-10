@@ -1,0 +1,1 @@
+Here the final answer will be of the form a+b+c where a is a prefix of s, c is the suffix of t and b is a common substring between s and t. Now if we dry run through various test cases we can see that b can always be of 1 length. So we just need to go through all the characters and see if they are common between the strings and see if they give the minimum length or not.
