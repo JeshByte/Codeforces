@@ -1,0 +1,5 @@
+So for the final median to be <=k, two of the subarrays need to have medians <=k. So there can be 3 cases. I am representing subarray with median <=k as S and >k as L.
+1) S S L
+2) L S S
+3) S L S
+We can just use multisets/heaps to find the running median and see if any of these cases are possible. But another thing, in case 1 and 2 we need to be careful of where we end our first S subarray. So if we find a subarray whose median is <=k but it's length is odd and the next element is >=median and >k, we should also include that element into the current subarray. This is because it won't affect the median of the current subarray but as it is >k it might make it difficult for us to find another S subarray if we don't include it in the current one. If it is <k, we shouldn't take it because that element could alone form another S subarray so we will just end up wasting it. And if our current subarray is of even length, we don't need to check for anything because for it to not change our current median the next element will have to be <=median i.e. <=k so similar to the above case it would be a waste. 
