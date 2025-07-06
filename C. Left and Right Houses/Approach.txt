@@ -1,0 +1,2 @@
+We can just brute force it going through each element one by one and finding the most optimal answer. We just need to precompute the number of zeroes and ones to check for them in O(1) during our traversal.
+NOTE - For the distance calculation we need to use exact decimal figure for n/2.
