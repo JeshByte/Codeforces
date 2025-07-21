@@ -1,0 +1,1 @@
+In p, for an arr[i] it must be a multiple of p[i]. Similarly, the same arr[i] must also be a multiple of s[i] in s. Thus, we get the relation arr[i]=lcm(p[i],s[i]) for all 1<=i<=n. After constructing this array we will have to check whether it is valid or not. If it is then the answer is YES or else it is NO.
