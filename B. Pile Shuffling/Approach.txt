@@ -1,0 +1,6 @@
+So here we will need to divide this problem into the following cases - 
+1) Deficit in zero and surplus in one - Here zeroes are less, so we won't move them. But the ones are more so we will need to move them. But as they are not in top we will first need to move the zeroes above them. In this case the number of operations needed are (surplus in one + no of zeroes).
+2) Surplus in zero and deficit in one - Here zeroes are more so we will need to move them but as the ones are less we won't move them. The zeroes are already at the top so we can directly move them. In this case the number of operations needed are just (surplus in zero).
+3) Surplus in both one and zero - Here both will be needed to be moved. So first we will move the zeroes because then we will need to just move the remaining zeroes if any for the ones. Doing it in the opposite order will increase the number of needed operations. In this case the number of operations are (surplus in zero and one + number of zeroes left after moving them).
+
+We can ignore the other cases. So we just need to sum up these operations pilewise depending on the above cases and we will get our answer.
