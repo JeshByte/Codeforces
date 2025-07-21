@@ -1,0 +1,1 @@
+Sort it and greedily pick casinos such that your current number of coins is increased. This will give you the max possible number of coins.
