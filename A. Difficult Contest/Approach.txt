@@ -1,0 +1,1 @@
+One possible way to do this is to put all the Ts first, then the other non-F and non-N characters. At the end then add all the Fs and Ns. This will always give us a valid string in all cases.
