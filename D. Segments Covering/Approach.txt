@@ -1,0 +1,6 @@
+The condition will be satisfied only when there is a configuration where there are continous segments covering the entire strip. The probability of such a strip will be P(strips that are part of the config.)*(1-P(other strips)). We will need to add up these probabilities for all the possible configs. Lets say P(a strip) is p/q. Then this formula can be simplified to pi(q_i-p_i/q_i)*pi(q_i/q_i-p_i * p_i/q_i) where pi is the multiplication function. This further simplifies to pi(q_i-p_i/q_i)(for all strips)*pi(p_i/q_i-p_i)(for strips in the current config). So if we sum it up, the final answer is pi(q_i-p_i/q_i)(for all strips)*sigma(pi(p_i/q_i-p_i)(for strips in the current config))(for all the valid configs) where sigma is the summation function. So the first term is a constant which we will precompute and the second term we will compute using dp. 
+
+State - dp[i]=sum of probabilities of all segments starting at i reaching m.
+Transition - dp[l]+=dp[r+1] where (l,r) is the concerned segment. 
+
+Using this we can calculate the second term which will be stored in dp[1]. For the inverse modulo we will just use Fermat’s little theorem. In this way we can find the final answer.
