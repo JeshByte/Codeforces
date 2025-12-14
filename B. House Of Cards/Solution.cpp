@@ -1,0 +1,49 @@
+#include<bits/stdc++.h>
+using namespace std;
+using ll=long long;
+#define Ceil(a,b) ((a+b-1)/b)
+ll modExpo(ll base, ll exp, ll mod) {
+    ll result = 1;
+    while (exp > 0) {
+        if (exp % 2 == 1) {
+            result = (result * base) % mod;
+        }
+ 
+        exp = exp >> 1;
+ 
+        base = (base * base) % mod;
+    }
+    return result;
+}
+ll findInverse(ll n,ll MOD){
+    return modExpo(n,MOD-2,MOD);
+}
+void solve(ll t){
+    ll n;
+    cin>>n;
+    ll val=2;
+    ll h=0;
+    while(n>0){
+        n-=val;
+        h++;
+        if(n<0){
+            cout<<-1<<'\n';
+            return;
+        }  
+        if(n==0){
+            cout<<h<<'\n';
+            return;
+        }
+        val+=2;
+    }
+}
+int main(){
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  ll t=1;
+  cin>>t;
+  for(int i=1;i<=t;i++){
+  solve(i);
+  }
+  return 0;
+}
