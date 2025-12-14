@@ -1,0 +1,4 @@
+For every element we have to make the choice of putting it into either sets. And for making our decision, we only need to consider the last inserted element in each set as any penalty would depend on that element only. So lets assume we have two sets with the last elements x and y. We will make it so that x<=y. The element we are trying to insert is val. Then we can have 3 cases - 
+- val<=x -> In this case, we won't get a penalty in any case. But we should put it with x, because y is bigger so it would be easier in the future to have elements smaller/equal to it.
+- val>x & val<=y -> In this case, we won't get a penalty if we put it with y. So thats what we will do.
+- val>=y -> In this case, we will always get a penalty. So similar to the first case, we will put it with x as y is bigger and would lead to a more optimal answer.
