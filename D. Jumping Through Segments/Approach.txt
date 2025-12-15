@@ -1,0 +1,5 @@
+The k is monotonic so we can apply binary search on answer to find it. We just need a O(n) way to validate our answer. So we can define a range of points within which our player could be present after a operation. So there could be three cases - 
+- the range we can be in currently and the one in which we need to be after ith operation are intersecting. So in this case, we don't need to check if we can reach the desired segment or not and just update our range accordingly.
+- the current range is to the left of the desired segment. Then we will check if we can reach it from the rightmost end of our range. If we can then its ok and we will update our range accordingly. If not, the k is not valid.
+- the current range is to the right of the desired segment. We will handle it similar to the above case.
+In this way we will find the optimal answer in O(nlogn).
