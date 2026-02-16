@@ -1,0 +1,1 @@
+67 is prime, so you need to have 67 itself to get 67 through multiplication. So just check for 67 and depending on that give the answer.
