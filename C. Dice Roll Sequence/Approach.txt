@@ -1,0 +1,6 @@
+So for an element i, there can't be i or (7-i) to its adjacent. We will use a dp approach here.
+- dp[i][prev] = minimum operations needed for the prefix till i with the previous element being prev
+- There are two cases. If arr[i] is compatible with prev, then dp[i][prev]=1+dp[i+1][prev].
+- Otherwise, dp[i][prev]=min(1+dp[i+1][j]) for all j >=1 and <=6.
+- dp[n][prev] = 0 - base case
+- dp[0][0] = Final subproblem to be solved
