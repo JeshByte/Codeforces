@@ -1,0 +1,3 @@
+As we have to deal with solving equations here to get the answer, we will first find the general expressions for f(x),f(x+1) and f(x-1). Toying with them will eventually give us the equation - 
+(f(x-1)+f(x+1)-2*f(x))/2=ax. This gives us the answer for ax for all x from 2 to n-1. For a1 and an we need to use f(1) and f(n). From there we will get the equations - 
+(f(1)-(a2+2a3+...))/(n-1)=an and (f(n)-((n-2)*a2+(n-3)*a3+...))/(n-1)=a1. Using these we can easily get our answers.
