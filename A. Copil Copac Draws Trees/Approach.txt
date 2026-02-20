@@ -1,0 +1,7 @@
+As per the problem, a child node gets read either at the same time as its parent or in the interation/scan immediately after. They get read in the same scan if the child's edge is after that of the parent or else they get read in the next scan. From this we can see the problem turning into a dp one.
+- dp[i]=scans needed for node i to get read
+- id[i]=index of edge which got node i read
+- dp[i]=dp[parent[i]] if index(parent[i]->i)>=id[parent[i]]
+- otherwise, dp[i]=dp[parent[i]]+1. In both these cases, the id of the child node needs to updated accordingly.
+- As we need to process the parent node before the child, we will use a dfs style traversal here.
+- Final answer will be max(dp). Thus our solution works in linear time.
