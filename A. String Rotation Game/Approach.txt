@@ -1,0 +1,1 @@
+Performing the operation is beneficial only when the current last element is not equal to the current first element. So just perform the operation till this condition is true, then find the number of blocks in this new string. Both of this can be done in linear time.
