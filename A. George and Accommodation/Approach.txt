@@ -1,0 +1,1 @@
+Just calculate the free space for each room and count the ones having free space greater than equal to 2.
