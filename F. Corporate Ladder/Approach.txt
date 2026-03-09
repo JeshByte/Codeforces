@@ -1,0 +1,1 @@
+If we treat the employee hierarchy as a graph, the queries can be seen like this - tell me the kth ancestor of x node. We can simply use binary lifting to answer these queries efficiently.
