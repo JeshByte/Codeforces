@@ -1,0 +1,1 @@
+So to maximise the 1s, we will just greedily convert as many 0s as possible in the original string. But to minimise the 1s, it will be optimal to convert as many 1s as possible in the maximised string. This is because it will have the maximum  possible 1s and has a reasonable chance of having more 1s between 2 1s than the original string.
