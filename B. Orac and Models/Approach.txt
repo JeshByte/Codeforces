@@ -1,0 +1,6 @@
+So we have to apply dp here. These are the states and transitions - 
+- dp[i]=length of longest beautiful sequence ending at a[i]
+- dp[i]=1 for all i -> base case
+- dp[i]=max(dp[j])+1 for all j such that i%j==0 && arr[j]<arr[i] && j<i. For each i, there would be atmost sqrt(i) number of j
+- max(dp[i]) for all i is the final answer
+- There are n states and the transition time is sqrt(n). Thus this problem will take n*sqrt(n) time which is within the problem constraints
