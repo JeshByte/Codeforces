@@ -1,0 +1,6 @@
+So first if we have a set of numbers a,b,c... and we need to find numbers that are divisible by all of them, then we need to just find all the multiples of their LCM.
+In this problem, we will use this to find number of days that can be visited by a alone, a and b or even all 3 of them together. But we will also need to apply inclusion exclusion principle here to handle the overlaps. So using that these are the formulae we need - 
+- Case of 1 person only -> a only = n(a)-n(a,b)-n(a,c)+n(a,b,c)
+- Case of 2 person only -> a and b only = n(a,b)-n(a,b,c)
+- Case of 3 person only -> a,b,c only = n(a,b,c). There can't be any overlap here.
+So we will just sum up the contributions from each of the cases accordingly to find the final total answer.
