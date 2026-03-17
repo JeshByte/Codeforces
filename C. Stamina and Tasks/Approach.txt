@@ -1,0 +1,5 @@
+So here we need to decide which tasks to pick and ignore which is a classic dp problem. But here the problem is S. As it can go till 6 decimal places, we can't store it in a dp array within constraints. But do we really need it? Lets say we pick our first task. The points we get from it are ci. And our stamina becomes (1-pi/100). Then the cost of the next chosen task will be (1-pi/100)*cj and then the next chosen one's will be (1-pj/100)*(1-pi/100)*ck. We can see that S doesn't matter, we can just choose our tasks based on their c and p values. The final result just needs to be scaled up by S at the end(which isn't needed here as S=1). So our dp will be - 
+- dp[i]=maximum points earned from suffix of i
+- dp[i]=max(dp[i+1],(1-pi/100)*dp[i+1]) -> This represents the case of either picking or ignoring the current task
+- dp[n]=0 as there is no suffix left(base condition)
+- dp[0] is the final subproblem with our answer
