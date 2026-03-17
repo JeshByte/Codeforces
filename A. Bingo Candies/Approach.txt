@@ -1,0 +1,1 @@
+So basically every row can have atmost n-1 elements of same kind. Thus we need at least one element in each row and column of another kind to have a valid arrangment. Therefore the max number of elements of one kind we can have are n^2-n. So we just need to check with this condition.
