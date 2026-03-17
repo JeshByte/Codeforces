@@ -1,0 +1,1 @@
+Just simulate what the problem says using a multiset to keep track of the maximum element and delete elements accordingly. Keep track of the last element present in the set to prevent any kind of overlap in the deletions. This way the code will run in linear time.
