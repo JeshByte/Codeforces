@@ -1,0 +1,1 @@
+Just simulate what the problem says as the number of operations will always be just n.
