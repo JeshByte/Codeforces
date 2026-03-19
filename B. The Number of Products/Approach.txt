@@ -1,0 +1,6 @@
+We have to use dp here. The states and transition will be - 
+- pos[i]=number of subarrays with positive product starting from i and neg[i]=number of subarrays with negative products starting from i
+- pos[i]=1 for positive numbers and 0 for negative numbers. Similarly, neg[i]=1 for negative numbers and 0 for positive numbers
+- For positive numbers, pos[i]=pos[i]+pos[i+1] and neg[i]=neg[i]+neg[i+1]
+- For negative numbers, pos[i]=pos[i]+neg[i+1] and neg[i]=neg[i]+pos[i+1]
+- Sum of all values in pos and neg will give us our answers
