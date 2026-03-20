@@ -1,0 +1,8 @@
+This is a standard pick and choose dp problem. The states and transitions will be - 
+- dp[i][ch] = max sum of heights of players chosen till i for ch choice where ch=0 means no player is chosen and ch=1,2 means the player is chosen from the ch-th row
+- dp[0][0]=0, dp[0][1]=row1[0] and dp[0][2]=row2[0] are the base conditions
+- The transitions are - 
+                  - dp[i][0]=max(dp[i-1][0],dp[i-1][1],dp[i-1][2])
+                  - dp[i][1]=max(dp[i-1][0],dp[i-1][2])+row1[i]
+                  - dp[i][2]=max(dp[i-1][0],dp[i-1][1])+row2[i]
+- Final answer -> max(dp[n-1][0],dp[n-1][1],dp[n-1][2])
