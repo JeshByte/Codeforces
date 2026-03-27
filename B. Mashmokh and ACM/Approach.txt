@@ -1,0 +1,6 @@
+We have to use 2d dp here. The states and transitions will be - 
+- dp[s][len]=number of good sequences starting with s of length len
+- dp[s][len]=dp[m1][len-1]+dp[m2][len-1]+... where mi are all the multiples of s till n
+- dp[i][1]=1 where 1<=i<=n is the base case
+- sum of all dp[i][k] where 1<=i<=n is the final answer
+- As we only need the prev column to compute the current one, we just need to keep track of one column at a time. This makes the space complexity linear. Also finding multiples of a number till n, takes nlogn time.
