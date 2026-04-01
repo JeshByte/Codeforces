@@ -1,0 +1,1 @@
+Sitting on a chair will be problematic if it blocks a later seat. So just sit on those seats which block seats before it(including itself).
