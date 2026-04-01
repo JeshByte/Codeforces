@@ -1,0 +1,1 @@
+As there are only 6 numbers here, we can hard code all the possible products and from each query we will know the 2 numbers in the given indices. But we also need to figure out their positions. So if we make 2 queries for ai,ai+1 and ai+1,ai+2 then using this we can easily figure out the exact position for the 3 elements. 4 queries would be enough to get all the 6 elements.
