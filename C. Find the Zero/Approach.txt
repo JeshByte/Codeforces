@@ -1,0 +1,5 @@
+An obvious solution is to query all pairs of elements. If any of them return 1, we got our answer. This would take atmost n queries. After that we will know that every block of 2 elements has one zero in it. So simply query 1,3 and 1,4. If either returns 1 - then 1 has a zero. Otherwise 2 has the zero in that block. But the problem here is this would result in n+2 queries in the worst case. But here querying 1,2 wont be necessary initially. Lets say on querying all elements you get all 0s. So these are the cases for the 1st 2 elements - 
+- a1!=0 and a2!=0 -> So we have remaining 2n-2 elements which can hold n-1 zeroes. But we need to fit n zeroes. So this case is impossible.
+- a1=0 and a2!=0 -> So if both 1,3 and 1,4 give 0 then neither 3 nor 4 have 0s. So remaining 2n-4 elements which can hold atmost n-2 zeroes will need to fit n-1 0s which is also impossible.
+- Thus the only possible case here is of a1!=0 and a2=0 - which we anyways are getting from our above logic.
+So we can easily get an answer just through atmost n+1 queries.
