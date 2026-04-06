@@ -1,0 +1,1 @@
+The only thing common with the add and xor operator is that they both change the number's parity when applied with an odd number. As x and x+3 will always have different parities, the answers they will generate will also have different parities. So just check with whom the given number's parity matches.
