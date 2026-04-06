@@ -1,0 +1,1 @@
+A person can't catch up with a person after it as all of them are running at same speed. The only way it can catch up and greet someone is if the other person stops before them. Basically every segment greets those segments that fit inside it. So we just need to find how many segments fit inside each of them which can done in n*logn time using an ordered set.
