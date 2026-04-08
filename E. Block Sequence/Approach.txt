@@ -1,0 +1,5 @@
+We have to use dp here. The states and transitions are - 
+- dp[i]=number of deletions needed to make the segment i->n good
+- dp[i]=min(dp[i+1],dp[i+arr[i]+1]). Here dp[i+1] represents the case of where we choose to delete arr[i]. And the other one represents the case where we don't so along with it, we also need to keep the next arr[i] elements. When i+arr[i]+1 is >n, the answer would n-i which basically means all the remaining elements have to be deleted.
+- dp[n]=0 -> the base case
+- dp[0] -> the final subproblem to be solved
