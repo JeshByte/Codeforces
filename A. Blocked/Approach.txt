@@ -1,0 +1,1 @@
+An obvious way to ensure the array isn't blocked is to just sort it in descending order. The only case it won't work is if the array has duplicates but then in that case it is anyway impossible to satisfy the given condition.
