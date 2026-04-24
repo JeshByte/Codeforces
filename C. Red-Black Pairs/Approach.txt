@@ -1,0 +1,1 @@
+Here a greedy approach would work, which we can verify by dry running a few test cases. So we just pair the elements greedily - first vertically and then horizontally. Lets say in this way we make p pairs. Then the final answer is n-p+1.
