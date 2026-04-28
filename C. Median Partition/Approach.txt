@@ -1,0 +1,1 @@
+The key observation here is that median of the subarrays will be the median of the entire array. This can be verified by dry running a few test cases. So after that you could easily apply dp in n^2 time to find the maximum subarrays that could be created with that particular median.
