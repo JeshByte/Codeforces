@@ -1,0 +1,1 @@
+0 can be created by setting all the xis to 0. For creating 1, you need at least a 100 in the array. That would give you the coefficient of 1 using which you can make 1. But using that you could also make any other number irrespective of the other coefficients. So we just need to check for the presence of 100 to give the final answer. 
