@@ -1,0 +1,1 @@
+We can take the entire string and arrange it in any way. We just need equal number of open and close brackets to make a valid string.
