@@ -1,0 +1,1 @@
+We can only make atmost 1 move of one length on either coordinate. So the only case we can't reach the target is if both of the coordinates are odd.
