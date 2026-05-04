@@ -1,0 +1,1 @@
+Standard problem of segment fitting. Sort the segments as per their end points, and then for each segment use a set and binary search to find segments with valid start points. We will get our answer in n*logn time.
